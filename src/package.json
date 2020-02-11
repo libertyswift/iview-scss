@@ -1,0 +1,25 @@
+{
+  "name": "iview-scss",
+  "version": "1.0.0",
+  "description": "style scss for iviewui framework",
+  "scss": "src/index.scss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "libertyswift",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com"
+  },
+  "keywords": [
+    "iviewui",
+    "iviewui-style",
+    "iview"
+    "css",
+    "scss",
+    "framework"
+  ],
+}
+
