@@ -9,7 +9,7 @@ $icon-prefix-cls: "#{$css-prefix}icon";
     font-size: $font-size-base;
     line-height: 16px;
     margin-bottom: 10px;
-    & &-with-icon{
+    &.#{$alert-prefix-cls}-with-icon{
         padding: 8px 48px 8px 38px;
     }
     &-icon {
@@ -30,7 +30,7 @@ $icon-prefix-cls: "#{$css-prefix}icon";
         border: $border-width-base $border-style-base $success-color;
         //background-color: tint(@success-color, 90%);
         //background-color: ~`colorPalette("@{success-color}", 1)`;
-        background-color: $success-color;
+        background-color: tint($success-color, 90%);
         .#{$alert-prefix-cls}-icon {
             color: $success-color;
         }
@@ -38,7 +38,7 @@ $icon-prefix-cls: "#{$css-prefix}icon";
     &-info {
         border: $border-width-base $border-style-base $info-color;
         //background-color: tint(@primary-color, 90%);
-        background-color: $info-color;
+        background-color: tint($info-color, 90%);
         .#{$alert-prefix-cls}-icon {
             color: $primary-color;
         }
@@ -46,7 +46,7 @@ $icon-prefix-cls: "#{$css-prefix}icon";
     &-warning {
         border: $border-width-base $border-style-base $warning-color;
         //background-color: tint(@warning-color, 90%);
-        background-color: $warning-color;
+        background-color: tint($warning-color, 90%);
         .#{$alert-prefix-cls}-icon {
             color: $warning-color;
         }
@@ -54,7 +54,7 @@ $icon-prefix-cls: "#{$css-prefix}icon";
     &-error {
         border: $border-width-base $border-style-base $error-color;
         //background-color: tint(@error-color, 90%);
-        background-color: $error-color;
+        background-color: tint($error-color, 90%);
         .#{$alert-prefix-cls}-icon {
             color: $error-color;
         }
@@ -70,7 +70,7 @@ $icon-prefix-cls: "#{$css-prefix}icon";
         color: $text-color;
         line-height: 1.5;
     }
-    &-with-desc &-with-icon{
+    &-with-desc.#{$alert-prefix-cls}-with-icon{
         padding: 16px 16px 16px 69px;
     }
     &-with-desc &-desc{
