@@ -74,8 +74,8 @@ $tooltip-arrow-color: hsla(0,0%,85%,.5);
         white-space: nowrap;
 
         &-with-width{
-            white-space: pre-wrap;
-            text-align: justify;
+          word-wrap: break-word;
+          word-break: break-all;
         }
     }
 
